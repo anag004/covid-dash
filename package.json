@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "6505d7f8e11d1d3a": "https://api.observablehq.com/d/6505d7f8e11d1d3a.tgz?v=3",
     "@ant-design/icons": "^4.2.1",
+    "@observablehq/runtime": "^4.7.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
