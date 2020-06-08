@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Runtime, Inspector } from "@observablehq/runtime";
-import notebook from "6505d7f8e11d1d3a";
+import notebook from "f54ec6fafcffefcd";
 import { Slider } from "antd";
 
-class NYC extends Component {
+class Italy extends Component {
     chartRef = React.createRef();
     state = { bpoint: 60 };
 
@@ -43,10 +43,10 @@ class NYC extends Component {
                 <br />
                 {/* <input type="range" min="60" max="137" step="1" */}
                 {/* value={this.state.bpoint} onChange={this.setBpoint} /> */}
-                <Slider min={60} max={137} step={1} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
+                <Slider min={60} max={126} step={1} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
             </div>
         )
     }
 }
 
-export default NYC;
+export default Italy;
