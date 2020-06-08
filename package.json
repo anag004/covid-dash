@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "2d5f14ba18a2b4ca": "https://api.observablehq.com/d/2d5f14ba18a2b4ca.tgz?v=3",
     "6505d7f8e11d1d3a": "https://api.observablehq.com/d/6505d7f8e11d1d3a.tgz?v=3",
     "@ant-design/icons": "^4.2.1",
     "@observablehq/runtime": "^4.7.0",
@@ -10,8 +11,11 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.3.3",
+    "f54ec6fafcffefcd": "https://api.observablehq.com/d/f54ec6fafcffefcd.tgz?v=3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-latex": "^1.6.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "homepage": "http://anag004.github.io/covid-dash",
