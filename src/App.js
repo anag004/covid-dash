@@ -3,7 +3,7 @@ import './App.css';
 import { Layout, Menu } from 'antd';
 import { HomeOutlined, ContactsOutlined, ExperimentOutlined } from '@ant-design/icons';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -16,7 +16,7 @@ const { Header, Content, Footer, Sider } = Layout;
 
 function App() {
   return (
-    <Router>
+    <Router basename="/covid-dash">
       <Layout>
         <Sider
           breakpoint="lg"
@@ -33,19 +33,19 @@ function App() {
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
               <Menu.Item key="1" component={Link} icon={<HomeOutlined size="large"/>}>
-                <Link style={{ all: "inherit" }} to="/covid-dash">
+                <Link style={{ all: "inherit" }} to="/">
                   Home
                 </Link>
               </Menu.Item>
             
               <Menu.Item key="2" icon={<ExperimentOutlined />}>
-                <Link style={{ all: "inherit" }} to="/covid-dash/details">
+                <Link style={{ all: "inherit" }} to="/details">
                   Model details
                 </Link>
               </Menu.Item>
             
               <Menu.Item key="3" icon={<ContactsOutlined />}>
-                <Link style={{ all: "inherit" }} to="/covid-dash/contact">
+                <Link style={{ all: "inherit" }} to="/contact">
                   Contact us
                 </Link>
               </Menu.Item>
@@ -53,13 +53,13 @@ function App() {
         </Sider>
         <Layout>
           <Switch>
-            <Route exact path="/covid-dash">
+            <Route exact path="/">
               <HomePage/>
             </Route>
-            <Route path="/covid-dash/details">
+            <Route path="/details">
               <Details/>
             </Route>
-            <Route path="/covid-dash/contact">
+            <Route path="/contact">
               <Contact/>
             </Route>
           </Switch>
