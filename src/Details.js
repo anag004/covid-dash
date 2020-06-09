@@ -43,7 +43,7 @@ function Details() {
             </Title>
 
             <Paragraph style={{fontSize: "14pt"}}>
-                <Latex>In order to estimate $R$ we need social distancing data. </Latex> In our model, we use aggregated social mobility data <a href="https://www.google.com/covid19/mobility/">from google</a>. <Latex> These reports use cellphone location data to estimate the percentage change in mobility (from pre-pandemic levels) at several key locations like grocery stores, restaurants, etc. In our model, we assume that $R$ is correlated with this percentage change in mobility. Specifically, we assume that $R = R_M$ when the mobility is maximum and $R = R_m$ when it is minimum. The $R$ between these two points is estimated as the linear combination of $R_M$, $R_m$ and the social mobility at that point of time. $R_M$ and $R_m$ are parameters which are learnt from the data. This is a crude estimate and one of our goals is to obtain more detailed social distancing data to improve our estimate of $R$. 
+                <Latex>In order to estimate $R$ we need social distancing data. </Latex> In our model, we use aggregated social mobility data <a href="https://www.google.com/covid19/mobility/">from Google</a>. <Latex> These reports use cellphone location data to estimate the percentage change in mobility (from pre-pandemic levels) at several key locations like grocery stores, restaurants, etc. In our model, we assume that $R$ is correlated with this percentage change in mobility. Specifically, we assume that $R = R_M$ when the mobility is maximum and $R = R_m$ when it is minimum. The $R$ between these two points is estimated as the linear combination of $R_M$, $R_m$ and the social mobility at that point of time. $R_M$ and $R_m$ are parameters which are learnt from the data. This is a crude estimate and one of our goals is to obtain more detailed social distancing data to improve our estimate of $R$. 
                 </Latex>
             </Paragraph>
             
@@ -54,6 +54,18 @@ function Details() {
                 <Latex>
                     At a high level, we calculate the uncertainty by varying the parameters $R_M, R_m$ over a grid. We retain those values for which the error from the data is not too large. For each admissible set of values of $R_M$ and $R_m$, we plot curves and take the maximum and minimum of these to get the blue uncertainty region you see in the plots. 
                 </Latex>
+            </Paragraph>
+
+            <Title style={{ marginTop: "10px" }}>
+                How did we get the data?
+            </Title>
+            <Paragraph style={{fontSize: "14pt"}}>
+                    For the modelling and prediction of COVID19 deaths, we source the data from the repositories maintained by relevant owners. The data is publicly available on the following links:
+                    <ul style={{paddingLeft: "2em"}}>
+                        <li><a href = "https://github.com/CSSEGISandData/COVID-19">John Hopkins CSSE COVID19 Repository</a> : This is the public repository maintained by the Center for Systems Science and Engineering at John Hopkins University. We used this repo for daily deceased data for regions outside India.</li>
+                        <li><a href = "https://www.covid19india.org/">covid19india Tracker Project</a> : This is a volunteer-driven project which compiles detailed data for COVID19 cases in India and relevant resources. This data is publicly available through the <a href = "https://api.covid19india.org/">API</a>. We used this resource for daily deceased data for states in India.</li>
+                        <li><a href = "https://www.google.com/covid19/mobility/">Google Social Mobility Report</a> : The data, published in aggregated form, shows the change in visitor count at public places against pre-COVID19 days. The baseline day is the median value for a five-week period from Jan-03-2020 to Feb-06-2020. The places are categorized into Retail and Recreation, Grocery and Pharmacy, Parks, Transit Stations, Workplaces, and Residential. We use this data as a measure of social distancing practices for any region in India or outside.</li>
+                    </ul>
             </Paragraph>
         </Content>
     );
