@@ -33,19 +33,19 @@ function App() {
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
               <Menu.Item key="1" component={Link} icon={<HomeOutlined size="large"/>}>
-                <Link style={{ all: "inherit" }} to="/">
+                <Link style={{ all: "inherit" }} to="/covid-dash">
                   Home
                 </Link>
               </Menu.Item>
             
               <Menu.Item key="2" icon={<ExperimentOutlined />}>
-                <Link style={{ all: "inherit" }} to="/details">
+                <Link style={{ all: "inherit" }} to="/covid-dash/details">
                   Model details
                 </Link>
               </Menu.Item>
             
               <Menu.Item key="3" icon={<ContactsOutlined />}>
-                <Link style={{ all: "inherit" }} to="/contact">
+                <Link style={{ all: "inherit" }} to="/covid-dash/contact">
                   Contact us
                 </Link>
               </Menu.Item>
