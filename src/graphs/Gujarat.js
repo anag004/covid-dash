@@ -5,7 +5,7 @@ import { Slider } from "antd";
 
 class Gujarat extends Component {
     chartRef = React.createRef();
-    state = { bpoint: 60 };
+    state = { bpoint: 113 };
 
     setBpoint = (event) => {
         console.log(event);
@@ -43,7 +43,7 @@ class Gujarat extends Component {
                 <br />
                 {/* <input type="range" min="60" max="137" step="1" */}
                 {/* value={this.state.bpoint} onChange={this.setBpoint} /> */}
-                <Slider min={60} max={119} step={1} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
+                <Slider min={90} max={113} step={1} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
             </div>
         )
     }

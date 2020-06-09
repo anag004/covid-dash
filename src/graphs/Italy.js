@@ -5,7 +5,7 @@ import { Slider } from "antd";
 
 class Italy extends Component {
     chartRef = React.createRef();
-    state = { bpoint: 60 };
+    state = { bpoint: 126 };
 
     setBpoint = (event) => {
         console.log(event);

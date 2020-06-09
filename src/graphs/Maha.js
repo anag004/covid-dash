@@ -5,7 +5,7 @@ import { Slider } from "antd";
 
 class Maha extends Component {
     chartRef = React.createRef();
-    state = { bpoint: 60 };
+    state = { bpoint: 113 };
 
     setBpoint = (event) => {
         console.log(event);
