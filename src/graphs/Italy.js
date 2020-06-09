@@ -43,7 +43,7 @@ class Italy extends Component {
                 <br />
                 {/* <input type="range" min="60" max="137" step="1" */}
                 {/* value={this.state.bpoint} onChange={this.setBpoint} /> */}
-                <Slider min={60} max={126} step={1} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
+                <Slider min={60} max={126} step={1} style={{marginBottom: "50px"}} onChange={this.setBpoint} value={this.state.bpoint} tooltipPlacement="bottom"></Slider>
             </div>
         )
     }
