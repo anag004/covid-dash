@@ -17,7 +17,7 @@ function HomePage() {
             You can see below various interactive graphs for regions in India and around the world. The red region in each plot indicates that the model is extrapolating deaths in that region. You can use the scrubber to change the amount of data the model fits on and see how that affects the uncertainty intervals. 
         </Paragraph>
         <Paragraph style={{fontSize: "14pt"}} type="danger">
-            Models are only as good as their assumptions. It is a bad idea to take any sort of projections at face value. We encourage you to read about our model <Link to="/details" component={Typography.Link}>here</Link>. 
+            Models are only as good as their assumptions. It is a bad idea to take any sort of projections at face value. We encourage you to read about our model <Link to="/covid-dash/details" component={Typography.Link}>here</Link>. 
         </Paragraph>
         <Title level={2}>Delhi</Title>
         <Delhi/>
