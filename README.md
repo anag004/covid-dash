@@ -22,3 +22,11 @@ We need help along the following lines
 - [ ] Currently we use observable HQ to embed notebooks for our plots which are hard to update. Make an efficient way to update plots.
 - [ ] Improving uncertainty estimation. 
 - [ ] UX improvements in the dashboard frontend
+
+## Maintainers
+
+- [anag004](github.com/anag004/)
+- [tyagiutkarsh](github.com/tyagiutkarsh/)
+
+## License
+See the [LICENSE](https://github.com/anag004/covid-model/blob/master/LICENSE.md) file for license rights and limitations (MIT).
