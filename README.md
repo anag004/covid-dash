@@ -1,6 +1,6 @@
 # COVID-dashboard
 
-This is a dashboard for our SIRD covid model. The Python code for the projections is located in [this repository](https://github.com/anag004/covid-model). The dashboard is live [here](https://anag004.github.io/covid-dash/). If you notice any bugs file an issue or better yet, open a pull request. If you want to contribute, check out this [guide]() for areas where we need help. 
+This is a dashboard for our SIRD covid model. The Python code for the projections is located in [this repository](https://github.com/anag004/covid-model). The dashboard is live [here](https://anag004.github.io/covid-dash/). If you notice any bugs file an issue or better yet, open a pull request. We appreciate contributions. 
 
 ## Running locally
 
@@ -15,4 +15,10 @@ A development server will be launched and you can visit the site on `localhost:3
 
 ## Contributing
 
-Check out the [guide]().
+We need help along the following lines
+
+- [ ] Generating projections for more regions in India and around the world.
+- [ ] Improving the smoothing algorithm to convert raw data to a death curve.
+- [ ] Currently we use observable HQ to embed notebooks for our plots which are hard to update. Make an efficient way to update plots.
+- [ ] Improving uncertainty estimation. 
+- [ ] UX improvements in the dashboard frontend
