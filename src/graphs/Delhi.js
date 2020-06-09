@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Runtime, Inspector } from "@observablehq/runtime";
 import notebook from "f8ee7aef4a358e58";
 import { Slider } from "antd";
 
 class Maha extends Component {
     chartRef = React.createRef();
-    state = { bpoint: 113 };
+    state = { bpoint: 90 };
 
     setBpoint = (event) => {
         console.log(event);
@@ -14,6 +14,7 @@ class Maha extends Component {
 
     componentDidMount() {
         const runtime = new Runtime();
+
         runtime.module(notebook, name => {
             if (name === "chart") {
                 return new Inspector(this.chartRef.current);
@@ -27,6 +28,8 @@ class Maha extends Component {
                 };
             }
         });
+
+        this.forceUpdate();
     }
 
     componentDidUpdate(nextProps, nextState) {

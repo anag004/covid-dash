@@ -5,7 +5,7 @@ import { Slider } from "antd";
 
 class Gujarat extends Component {
     chartRef = React.createRef();
-    state = { bpoint: 113 };
+    state = { bpoint: 90 };
 
     setBpoint = (event) => {
         console.log(event);

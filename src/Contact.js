@@ -26,7 +26,7 @@ function Contact() {
                     <li>Generating projections for more regions in India and around the world.</li>
                     <li>You may have noticed that the model curve does not fit well to the initial part of the death curve. We believe this is because of the discrete nature of the death count. We want to improve the smoothing algorithm to get a "better" curve.</li>
                     <li>We currently use embedded notebooks from observable HQ for our plots which are hard to update. We want a better system for managing our plots one which does not ideally need a third-party service.</li>
-                    <li>Our uncertainty intervals are computed based on empirical observation from fitting to other regions in the world. We want a more principled way of computing uncertainties.</li>
+                    <li>Our uncertainty intervals are in part computed based on empirical observation from fitting to other regions in the world. We want a more principled way of computing uncertainties.</li>
                     <li>Make the frontend prettier and easier to use :)</li>
                 </ul>
             </Paragraph>
