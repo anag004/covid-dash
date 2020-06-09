@@ -53,13 +53,13 @@ function App() {
         </Sider>
         <Layout>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/covid-dash">
               <HomePage/>
             </Route>
-            <Route path="/details">
+            <Route path="/covid-dash/details">
               <Details/>
             </Route>
-            <Route path="/contact">
+            <Route path="/covid-dash/contact">
               <Contact/>
             </Route>
           </Switch>
