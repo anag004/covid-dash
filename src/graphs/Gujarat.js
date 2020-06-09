@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Runtime, Inspector } from "@observablehq/runtime";
-import notebook from "2d5f14ba18a2b4ca";
+import notebook from "5291880a2061402e";
 import { Slider } from "antd";
 
-class Spain extends Component {
+class Gujarat extends Component {
     chartRef = React.createRef();
     state = { bpoint: 60 };
 
@@ -49,4 +49,4 @@ class Spain extends Component {
     }
 }
 
-export default Spain;
+export default Gujarat;

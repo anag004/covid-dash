@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "2d5f14ba18a2b4ca": "https://api.observablehq.com/d/2d5f14ba18a2b4ca.tgz?v=3",
+    "5291880a2061402e": "https://api.observablehq.com/d/5291880a2061402e.tgz?v=3",
     "6505d7f8e11d1d3a": "https://api.observablehq.com/d/6505d7f8e11d1d3a.tgz?v=3",
     "@ant-design/icons": "^4.2.1",
     "@observablehq/runtime": "^4.7.0",

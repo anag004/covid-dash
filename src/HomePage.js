@@ -6,6 +6,7 @@ import Spain from "./graphs/Spain";
 import Maha from "./graphs/Maha";
 import Delhi from "./graphs/Delhi"
 import { Link } from "react-router-dom";
+import Gujarat from './graphs/Gujarat';
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 
@@ -23,12 +24,21 @@ function HomePage() {
         <Delhi/>
         <Title level={2}>Maharashtra</Title>
         <Maha/>
+        <Title level={2}>Gujarat</Title>
+        <Gujarat/>
+        <Paragraph style={{fontSize: "14pt", marginTop: "50px" }}>
+            See how our model performs in regions where the peak has passed and we know the entire distribution of deaths.
+        </Paragraph>
         <Title level={2}>New York City</Title>
         <NYC/>
         <Title level={2}>Italy</Title>
         <Italy/>
         <Title level={2}>Spain</Title>
         <Spain/>
+        <Title level={2}>Coming soon</Title>
+        <Paragraph style={{fontSize: "14pt"}}>
+            Currently we can only make predictions for locations in India which have a high death toll. We update our predictions every 2-3 days and will continue adding more regions. If you think our model would work well on a particular region let us know on <a href="https://github.com/anag004/covid-model">GitHub</a> by opening an issue. 
+        </Paragraph>
       </Content>
     )
 }
